@@ -42,8 +42,8 @@ a4=ListLinePlot[mnplt,PlotRange->{{0,0.25},{0,0.05}},PlotStyle->{PointSize[0.002
 
 Show[a3,a2,a4,a1,PlotRange->{{0.02,.3},{0,0.05}},GridLines->{{0.035}~Join~Range[0,0.3,0.01], Automatic},Ticks->{Range[0,0.3,0.01], Automatic},Axes->True,AxesOrigin->{0.1,0},AxesStyle->Directive[Darker[Blue,0.3],Bold,12],AxesLabel->{"Distance (m)","Speed (\!\(\*SuperscriptBox[\(ms\), \(-1\)]\))"},PlotLabel->{ ToString[n]<>"(n)",ToString[ n2]<>"(\!\(\*SubscriptBox[\(n\), \(2\)]\))", ToString[N[Round[ind,0.0001]]]<>"(initial_distance)" },LabelStyle->Directive[Bold,Red,14]]
 ];
-adr={"/dwitiya/imageJTest/macrotrials/dwd/dataJun20_2017/12m13new/","/dwitiya/imageJTest/macrotrials/dwd/data_2018_5_may_26/dist39.7mm/","/dwitiya/imageJTest/macrotrials/dwd/data_2018_5_may_26/dist45mm/"};
-ppcm={53,47,47};
+adr={"/path/to/datafile/folder1/","/path/to/datafile/folder2/","/path/to/datafile/folder3/"};
+ppcm={53,47,47};ppcm is pixel per cm data from calibration
 fhu=v01[adr[[#]],0.0006,.1,ppcm[[#]],60,0]&/@{1,2,3};
 fhu//Show
 
