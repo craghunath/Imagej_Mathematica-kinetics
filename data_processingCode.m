@@ -1,7 +1,7 @@
 
 mxt=50;
 st=0;
-fr=0.03;
+fr=0.03;frame rate 
 no=1;number of frame jumps
 mbot=7*10^-3;
 n=0.00000013;
